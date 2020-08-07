@@ -1,3 +1,3 @@
 # django-test-mini-blog
 
-## Just test Django Framework
+## Just test of Django
