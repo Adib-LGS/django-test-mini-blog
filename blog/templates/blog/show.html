@@ -1,6 +1,12 @@
 {% extends 'layouts/base.html' %}
 
+{% load static %}
+
 {% block title %}Blog | {{ post.title }}{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{% static 'blog/css/styles.css' %}">
+{% endblock %}
 
 {% block content %}
 <article>

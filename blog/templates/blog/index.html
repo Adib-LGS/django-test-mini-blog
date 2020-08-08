@@ -1,7 +1,16 @@
 {% extends 'layouts/base.html' %}
+
+{% load static %}
+
 {% block title %}Homepage{% endblock %}
+
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{% static 'blog/css/styles.css' %}">
+    {% endblock %}
 {% block content %}
-<h1>Django index({{ posts|length }} posts)</h1>
+
+    <h1>Django index({{ posts|length }} posts)</h1>
 
 
 {% for post in posts %}

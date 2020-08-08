@@ -1,0 +1,63 @@
+body{
+    font-family: 'Roboto', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f4f4f4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Helpers*/
+.wrapper{
+    width: 1440px;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+}
+
+/*NavBar*/
+
+.navbar{
+    background-color: black;
+    border-top: 4px solid #440404;
+    padding: 1rem 0;
+}
+
+.navbar .navbar-brand{
+    font-size: 1.8rem;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.navbar .navbar-right{
+    float: right;
+}
+
+.navbar .navbar-right li{
+    display: inline-block;
+    list-style: none;
+    margin-top: 0.3em;
+    margin-right: 0.8em;
+}
+
+.navbar .navbar-right li:last-child{
+    margin-right: 0;
+}
+
+.navbar .navbar-right li a{
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.navbar .navbar-right li a:hover{
+    color: #700404;
+}
+
+.footer{
+    margin-top: 3em;
+    color: rgba(0, 0, 0, 0.6);
+}

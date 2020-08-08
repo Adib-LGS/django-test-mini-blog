@@ -7,13 +7,20 @@
     <title>{% block title %}Acme{% endblock %}</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    {% block stylesheets %}
+    
+    {% endblock %}
 </head>
 <body>
+
     {% include 'layouts/partials/nav.html' %}
-    {% block content %}
 
-    {% endblock %}
+    <div class="wrapper">
+        {% block content %}{% endblock %}
+        {% include 'layouts/partials/footer.html' %}
+    </div>
 
-    {% include 'layouts/partials/footer.html' %}
+    {% block javascript %}{% endblock %}
+    
 </body>
 </html>
